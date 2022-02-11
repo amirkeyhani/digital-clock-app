@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Digital clock</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+            body{
+                background-color: #d2dbdd;
+            }
+            .time{
+                margin-top: 200px;
+                width: 450px;
+                color: #121318;
+                background-color: #d2dbdd;
+                font-family: 'Zen Dots', cursive;
+                border-radius: 5px;
+            }
+            .time small{
+                font-size: 10px;
+            }
+
+            <script>
+                function getTime(){
+                    document.getElementById('current-time').submit();
+                }
+                SetInterval(getTime, 1000);
+            </script>
+        </style>
+    </head>
+<body>
+    <form method="GET" id="current-time"></from>
+    <div class="container time text-center shadow p-3">
+        <h1>{{time}}</h1>
+        <small class="text-dark px-5 py-1">{{date}}</small>
+    </div>
+</body>
+</html>
