@@ -10,3 +10,4 @@ def clock(request):
     current_date = now.strftime('%d-%m-%Y')
     context = {'time': current_time, 'date': current_date}
     return render(request, 'clock.html', context)
+    
